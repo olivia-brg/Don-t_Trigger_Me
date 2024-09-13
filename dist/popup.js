@@ -1,0 +1,1 @@
+(()=>{"use strict";window.addEventListener("DOMContentLoaded",(e=>{const t=document.getElementById("openOptions");t&&t.addEventListener("click",(()=>{chrome.tabs.create({url:"public/options.html"})}))}))})();

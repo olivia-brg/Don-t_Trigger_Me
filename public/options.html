@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="option.css" />
+    <title>Options</title>
+</head>
+
+<body>
+    <h1>Options de l'extension</h1>
+
+    <!-- Template pour l'affichage des mots -->
+    <template id="wordItemTemplate">
+        <div class="word-item">
+            <span class="word-text"></span>
+            <button class="remove-word-button">✖</button>
+        </div>
+    </template>
+
+    <div>
+        <button id="showTriggerOption">Choisir par catégorie</button>
+        <div id="trigger_list"></div>
+        <div id="listValidation"></div> 
+        <div id="result"></div>  
+    </div>
+    <div> 
+        
+
+    
+        <p>Entrez des mots à bloquer, séparés par des virgules.</p>
+    </div>
+    <div id="blockedWordsContainer">
+        <textarea id="blockedWords" rows="4" placeholder=""></textarea>
+        <button id="saveBlockedWords">Sauvegarder</button>
+        <button>Flouter les images<label class="switch">
+            <input type="checkbox" id="blurButton">
+            <span class="slider round"></span>
+            
+        </label></button>
+    </div>
+    <div id="wordList"></div>
+
+        <!-- Template for word items -->
+        <template id="wordItemTemplate">
+            <div class="word-item">
+                <span class="word-text"></span>
+                <button class="remove-word-button">✖</button>
+            </div>
+        </template>
+        <script src="../dist/blurr_images.js"></script>
+        <script src="../dist/popup.js"></script>
+        <script src="../dist/content.js"></script>
+        <script src="../dist/saved_words.js"></script>
+        <script src="../dist/option.js"></script>
+    </body>
+</html>

@@ -1,0 +1,1 @@
+Pour transpiler : se placer dans le dossier racine et lancer la commande "npm run build"

@@ -1,0 +1,26 @@
+{
+    "manifest_version": 3,
+    "name": "Don't TRIGGER me",
+    "version": "1.0",
+    "description": "An extension to block and replace certain words in Web pages",
+    "permissions": ["storage", "activeTab", "scripting", "tabs"],
+    "background": {
+        "service_worker": "./dist/background.js"
+    },
+    "action": {
+        "default_popup": "./public/popup.html",
+        "default_icon": {
+            "128": "./assets/icons/icon128.png"
+        }
+    },
+    "icons": {
+        "128": "./assets/icons/icon128.png"
+    },
+    "options_page": "./public/options.html",
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["./dist/option.js", "./dist/content.js", "./dist/popup.js"]
+        }
+    ]
+}
